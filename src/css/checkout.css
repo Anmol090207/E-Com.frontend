@@ -1,0 +1,147 @@
+.checkout {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  .checkout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.checkout-back {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.checkout-heading {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.section-label {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 20px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  font-size: 12px;
+  color: var(--ink-soft);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.field input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.field-row {
+  display: flex;
+  gap: 12px;
+}
+
+.field-row .field {
+  flex: 1;
+}
+
+.checkout-note {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-top: 10px;
+}
+
+.checkout-note code {
+  background: var(--accent-soft);
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+.summary-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.summary-title {
+  font-size: 17px;
+  margin-bottom: 14px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.summary-total {
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.confirmation {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 96px 24px;
+  text-align: center;
+}
+
+.confirmation-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.confirmation-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.confirmation-copy {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.confirmation-copy code {
+  background: var(--accent-soft);
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin: 0 4px;
+}
